@@ -49,8 +49,8 @@ public class OficinaController {
 	@DeleteMapping("/{id}")
 	@Transactional
 	public void excluir(@PathVariable Long id) {
-		var atualizacao = oficinaRepository.getReferenceById(id);
-		oficinaRepository.deleteById(id);
+	 oficinaRepository.deleteById(id);
+		
 		
 	}
 }
